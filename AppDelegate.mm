@@ -35,6 +35,7 @@
 #define PUSH_EXTENSION_IDENTIFIER @"PushExtensionIdentifier"
 #define ISMAXCOUNT @"isMaxCount"
 #define ISCLEARARR @"isClearArr"
+#define ISCLEARARR @"isClearArr12312312312"
 
 //#import <objc/runtime.h>
 //@interface NSArray(AA) {
@@ -62,6 +63,20 @@
 //@end
 
 @interface AppDelegate (){
+    BOOL isTutkP2PDev;
+    NSDictionary *_userInfo;
+    UIBackgroundTaskIdentifier _backIden;
+    NSTimer      *_logoutTimer;
+    NSTimer      *_releaseP2PTimer;
+    BOOL         _bP2PInited;
+    NSUInteger   _backgroundRunTime; //seconds. App run time when in the background.
+    BOOL         _isColdStart;
+    BOOL         _noAddShareGroup;
+    NSInteger    _actorPushIndex;
+    RSNotification *_selectNoti;
+}
+
+@interface AppDelegate1 (){
     BOOL isTutkP2PDev;
     NSDictionary *_userInfo;
     UIBackgroundTaskIdentifier _backIden;
