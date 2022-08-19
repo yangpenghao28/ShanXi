@@ -305,6 +305,16 @@ void logCallback(const char* message, void* reserve){
     RSLogToAll(@"=================EnterForeground=================");
 }
 
+- (void)applicationWillEnterForeground1:(UIApplication *)application{
+    _isColdStart = YES; //此处应该是热启动AP，为了适配扩展RS启动后要读取ShareGroup数据，设置为YES
+    RSLogToAll(@"=================EnterForeground1=================");
+}
+
+- (void)applicationWillEnterForeground2:(UIApplication *)application{
+    _isColdStart = YES; //此处应该是热启动AP，为了适配扩展RS启动后要读取ShareGroup数据，设置为YES
+    RSLogToAll(@"=================EnterForeground2=================");
+}
+
 
 #pragma mark - UpDateShareGroupData
 - (void)getDataWithShereGroup{
