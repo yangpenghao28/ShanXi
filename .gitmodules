@@ -1,0 +1,3 @@
+[submodule "re-XLNT"]
+	path = re-XLNT
+	url = git@github.com:tfussell/xlnt.git
