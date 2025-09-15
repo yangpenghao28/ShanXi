@@ -602,7 +602,4 @@ void logCallback(const char* message, void* reserve){
     
 }
 
-- (void)testYang {
-    NSLog(@"TestYang. ");
-}
 @end
