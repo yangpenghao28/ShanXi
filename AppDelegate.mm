@@ -602,4 +602,6 @@ void logCallback(const char* message, void* reserve){
     
 }
 
+-(void)testYang {}
+
 @end
